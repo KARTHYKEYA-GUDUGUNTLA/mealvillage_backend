@@ -1,6 +1,6 @@
 
-require('dotenv').config();
-
+const dotenv = require('dotenv');
+dotenv.config();
 const express = require('express');
 const mysql = require('mysql');
 const app = express();
@@ -8,14 +8,24 @@ const Joi = require('joi');
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
+
 const connection = mysql.createConnection({
 
-  host: process.env.MYSQL_HOST,
-  user: process.env.MYSQL_USER,
-  password: process.env.MYSQL_PASSWORD,
-  database: process.env.MYSQL_DATABASE
+  host: process.env.db_Host,
+  user: process.env.db_User,
+  password: process.env.db_Password,
+  database: process.env.db_Database
 
 });
+// const connection = mysql.createConnection({
+
+//     host: 'localhost',
+//     user: 'root',
+//     password: 'abcxyz@123K',
+//     database: 'practice'
+  
+//   });
+
 
 connection.connect((err) => {
   if (err) {
