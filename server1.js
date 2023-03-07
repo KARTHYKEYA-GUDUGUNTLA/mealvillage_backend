@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+require('dotenv').config();
+>>>>>>> master
 const express = require('express');
 const mysql = require('mysql');
 const app = express();
@@ -6,10 +10,17 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 const connection = mysql.createConnection({
+<<<<<<< HEAD
   host: 'localhost',
   user: 'root',
   password: 'abcxyz@123K',
   database: 'practice'
+=======
+  host: process.env.MYSQL_HOST,
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DATABASE
+>>>>>>> master
 });
 
 connection.connect((err) => {
