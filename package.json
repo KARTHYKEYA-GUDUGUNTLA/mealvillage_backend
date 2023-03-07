@@ -1,0 +1,19 @@
+{
+  "name": "nodebackend",
+  "version": "1.0.0",
+  "description": "node backend",
+  "main": "server1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KARTHYKEYA/mealvillage_backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KARTHYKEYA/mealvillage_backend/issues"
+  },
+  "homepage": "https://github.com/KARTHYKEYA/mealvillage_backend#readme"
+}
