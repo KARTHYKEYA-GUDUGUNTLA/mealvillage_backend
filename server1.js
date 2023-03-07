@@ -17,14 +17,7 @@ const connection = mysql.createConnection({
   database: process.env.db_Database
 
 });
-// const connection = mysql.createConnection({
 
-//     host: 'localhost',
-//     user: 'root',
-//     password: 'abcxyz@123K',
-//     database: 'practice'
-  
-//   });
 
 
 connection.connect((err) => {
